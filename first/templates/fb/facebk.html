@@ -8,23 +8,30 @@
     <title>Document</title>
 </head>
 <body>
-  <center><h1><font face="Lucida Console"size="8" color="#2602D6">PK STORE</font> </h1></center><br>
+  <center><img src="{% static 'img/logodtr.jpg' %}" alt="" width="100"> </center><center><h1><font face="Courier New"size="8" color="#0293D6">PK STORE</font> </h1></center><br>
   <table cellspacing="15" width="100%" >
       <tr>
           <th >home</th>
           <th>store</th>
           <th>account</th>
           <th>settings</th>
+          <th>Download</th>
           <th>about us</th>
       </tr>
   </table><hr>
-  <p>wellcome page</p>
+  
   {% block content %}
+  <p>wellcome page</p>
+
+  <img src="{% static 'img/grocery.jpg' %}" alt=""width="500"><br><br>
+  <a href="{% url 'son' %}">click</a>    
   {% endblock %}
-  <p>git hub test</p>
-  <h1>about us</h1>
-    <img src="{% static 'img/store.png' %}" alt="pic">
-    <a href="{% url 'son' %}">click</a>    
+
+  
+    <hr>
+    
+    <center><img src="{% static 'img/store.png' %}" alt="pic" width="100"> </center><img src="{% static 'img/Get.jpg' %}" alt=""width="100">
+
         
         
         
