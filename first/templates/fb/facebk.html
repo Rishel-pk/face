@@ -1,0 +1,32 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <center><h1><font face="Lucida Console"size="8" color="#2602D6">PK STORE</font> </h1></center><br>
+  <table cellspacing="15" width="100%" >
+      <tr>
+          <th >home</th>
+          <th>store</th>
+          <th>account</th>
+          <th>settings</th>
+          <th>about us</th>
+      </tr>
+  </table><hr>
+  <p>wellcome page</p>
+  {% block content %}
+  {% endblock %}
+  <h1>about us</h1>
+    <img src="{% static 'img/store.png' %}" alt="pic">
+    <a href="{% url 'son' %}">click</a>    
+        
+        
+        
+         
+</body>
+</html>
