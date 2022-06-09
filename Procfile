@@ -1,1 +1,1 @@
-web: gunicorn face.wsgi --log-file-
+web: gunicorn face.wsgi --log-file -
